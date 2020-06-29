@@ -1,0 +1,22 @@
+
+<div class="container">
+    <div class="row mt-3">
+        <div class="col-lg-6">
+        <?php
+//var_dump($mahasiswa);
+?>
+<div class="card">
+  <div class="card-header">
+    Detail Mahasiswa
+  </div>
+  <div class="card-body">
+    <h5 class="card-title"><?=$mahasiswa['nama']?></h5>
+    <h6 class="card-subtitle mb-2 text-muted"><?=$mahasiswa['email']?></h6>
+    <p class="card-text"><?=$mahasiswa['nim']?></p>
+    <p class="card-text"><?=$mahasiswa['jurusan']?></p>
+    <a href="<?= base_url();?>mahasiswa" class="btn btn-primary">Kembali</a>
+  </div>
+</div>
+        </div>
+    </div>
+</div>
